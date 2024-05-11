@@ -1,28 +1,47 @@
-package TasksToDo.TaskWeek1;
+package TasksToDo.TaskWeek3;
+
+import java.util.Scanner;
 
 public class Number6 {
     public static void main(String[] args) {
-        /* A well-formed Java program has a main method with { and } 
-        braces.
+        
+        // vowel or consonant.
 
+    Scanner sc = new Scanner(System.in);
 
-A System.out.println statement has ( and ) and usually a 
-String that starts and ends with a " character.
-(But we type \" instead!)
+    System.out.println("Enter an alphabet");
+    String a=sc.nextLine();
+    sc.close();
+    a=a.toLowerCase();
 
-What is the difference between
-a ' and a "?  Or between a " and a \"?
-
-
-One is what we see when we're typing our program. The other is what 
-appears on the "console."
- */
-
-
-     System.out.print("\n\nA well-formed Java program has a main method with { and }\nbraces.\n\n\n");
-     System.out.println("A System.out.println statement has ( and ) and usually a\nString that starts and ends with a \" character.\n");
-     System.out.println("(But we type \\\" instead!)\n\nWhat is the difference between\na ' and a \"? Or between a \" and a \\\"?\n\n\n\n");
-     System.out.println("One is what we see when we're typing our program. The other is what\nappears on the \"console.\"\n\n");
+    
+    boolean isVowel=false;
+ 
+ String vowels[]={"a","e","i","o","u"};
+ //for-each loop to iterate each element of the array of vowels
+ for (String vowel : vowels){
+     if (vowel.equals(a)){
+         isVowel=true;
+         break;
+        }
+        
     }
+    if(isVowel){
+        System.out.println(a+" is a vowel");
+    }
+    else{
+        System.out.println(a+" is not a vowel");
+    }    
 
+
+
+//using basic if-else statements
+if(a.equals("a")||a.equals("e")||a.equals("i")||a.equals("o")||a.equals("u")){
+    System.out.println(a+" is a vowel");
+}
+else{
+    System.out.println(a+" is a consonant");
+}
+
+    }
 }

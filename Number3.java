@@ -1,22 +1,21 @@
-package TasksToDo.TaskWeek1;
+package TasksToDo.TaskWeek3;
+
+import java.util.Scanner;
 
 public class Number3 {
     public static void main(String[] args) {
-        /* A "quoted" String is
+        
+        // Write a JAVA program to check whether a number is divisible by 5 and 11 or not.
 
-'much' better if you learn
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter a number: ");
+        int number = sc.nextInt();
+        sc.close();
 
-the rules of "escape sequences."
+        System.out.println((number%5==0 && number%11==0)?"Divisible":"Not divisible");
 
-Also, "" represents an empty
 
-String. Don't forget: use \"
 
-instead of " !
-
-'' is not the same as " */
-
-System.out.print("A \"quoted\" String is \n'much' better if you learn\nthe rules of \"escape sequences.\"\nAlso, \"\" represents an empty\n");
-System.out.print("String. Don't forget: use \\\"\ninstead of \" ! \n'' is not the same as \"\n");
     }
 }
